@@ -4,7 +4,7 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**", "storybook-static/**"]
     },
     "lint": {},
     "type-check": {},
@@ -14,6 +14,10 @@
     },
     "clean": {
       "cache": false
-    }
+    },
+    "storybook": {
+
+    },
+    "storybook-build":{}
   }
 }
